@@ -170,7 +170,7 @@ bar {
 # Startups
 exec --no-startup-id nm-applet
 exec_always --no-startup-id compton -f
-exec_always --no-startup-id feh --bg-scale /home/hei/Downloads/wallpaper.png
+exec_always --no-startup-id feh --bg-scale /home/hei/Pictures/wallpaper.jpg
 
 # No window border
 new_window pixel 0
