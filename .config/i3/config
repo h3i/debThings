@@ -159,18 +159,23 @@ bar {
 	modifier mod1
 }
 
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+# Hotkeys
+#bindsym XF86MonBrightnessUp exec light -A 5
+#bindsym XF86MonBrightnessDown exec light -U 5
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+#using pommed now instead!
 
+# Startups
 exec --no-startup-id nm-applet
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id feh --bg-scale /home/hei/Downloads/wallpaper.png
 
+# No window border
 new_window pixel 0
 
+# Scratchpad
 bindsym $mod+Shift+m move scratchpad
 bindsym $mod+Shift+s scratchpad show
 bindsym $mod+Shift+f floating toggle
