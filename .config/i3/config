@@ -173,8 +173,8 @@ exec "xrdb ~/.Xresources"
 exec --no-startup-id nm-applet
 exec_always --no-startup-id feh --bg-scale /home/hei/Pictures/wallpaper.jpg
 exec --no-startup-id i3lock -e -f -c 000000
-exec "setxkbmap -layout us,de"
-exec "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always 'setxkbmap -layout us,de'
+exec_always "setxkbmap -option 'grp:alt_space_toggle'"
 
 # No window border
 new_window pixel 0
